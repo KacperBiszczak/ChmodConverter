@@ -2,14 +2,14 @@
 {
     public static class ChmodConverter
     {
-        public string SymbolicToNumeric(string symbolic)
+        public static string SymbolicToNumeric(string symbolic)
         {
-
+            throw new NotImplementedException();
         }
 
-        public string NumericToSymbolic(string numberic)
+        public static string NumericToSymbolic(string numberic)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
