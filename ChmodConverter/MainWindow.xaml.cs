@@ -24,5 +24,31 @@ namespace ChmodConverter
         {
             InitializeComponent();
         }
+
+        private void ButtonConvert_Click(object sender, RoutedEventArgs e)
+        {
+            //try
+            //{
+            //    TextBoxSymbolicPerm.Text = Utils.NumericToSymbolic(TextBoxNumericPerm.Text);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+        }
+
+        private void TextBoxNumericPerm_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            try
+            {
+                if(TextBoxSymbolicPerm.IsLoaded && TextBoxNumericPerm.IsLoaded)
+                    TextBoxSymbolicPerm.Text = Utils.NumericToSymbolic(TextBoxNumericPerm.Text);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

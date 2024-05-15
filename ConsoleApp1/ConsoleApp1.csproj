@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLib\ClassLib.csproj" />
+    <ProjectReference Include="..\ChmodConverter\ChmodConverter.csproj" />
   </ItemGroup>
 
 </Project>
