@@ -9,7 +9,7 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="46,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" FontSize="20" Height="32"><Run Language="pl-pl" Text="Permissions:"/></TextBlock>
         <TextBox Margin="362,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalAlignment="Left" Height="32"/>
-        <TextBox Margin="486,23,0,0"Margin="486,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" TextChanged="TextBox_TextChanged" Height="32" HorizontalAlignment="Left" Width="168"/>
+        <TextBox Margin="486,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" TextChanged="TextBox_TextChanged" Height="32" HorizontalAlignment="Left" Width="168"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="0" Margin="0,39,0,0" VerticalAlignment="Top" Width="800"/>
         <Label Content="Read" HorizontalAlignment="Left" Margin="28,79,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Write" HorizontalAlignment="Left" Margin="28,129,0,0" VerticalAlignment="Top" FontSize="20"/>
@@ -42,7 +42,6 @@
 
             FontSize="50" VerticalAlignment="Top" Margin="318,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="1" Margin="0,50,0,0" VerticalAlignment="Top" Width="800"/>
-        <CheckBox HorizontalAlignment="Left" Margin="159,193,0,0" VerticalAlignment="Top" FontSize="50" Width="20"/>
 
     </Grid>
 </Window>
