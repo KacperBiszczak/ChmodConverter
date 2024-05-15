@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine( U.NumericToSymbolic("222") );
+            Console.WriteLine( U.NumericToSymbolic("773") );
         }
     }
 }

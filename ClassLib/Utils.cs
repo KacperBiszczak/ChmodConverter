@@ -19,7 +19,7 @@
             if(numeric.Trim().Length == 3)
             {
                 numeric = numeric.Trim();
-                string result = "";
+                string result = "-";
 
                 foreach(char c in numeric)
                 {
@@ -33,7 +33,45 @@
                         }
                         else
                         {
-                            result += num;
+
+                            string symbolicPerm = "";
+                            switch (num)
+                            {
+                                case 1:
+                                    symbolicPerm = "--x";
+                                    break;
+
+                                case 2:
+                                    symbolicPerm = "-w-";
+                                    break;
+
+                                case 3:
+                                    symbolicPerm = "-wx";
+                                    break;
+
+                                case 4:
+                                    symbolicPerm = "r--";
+                                    break;
+
+                                case 5:
+                                    symbolicPerm = "r-x";
+                                    break;
+
+                                case 6:
+                                    symbolicPerm = "rw-";
+                                    break;
+
+                                case 7:
+                                    symbolicPerm = "rwx";
+                                    break;
+
+                                default:
+                                    symbolicPerm = "---";
+                                    break;
+
+                            }
+
+                            result += symbolicPerm;
                         }
                     }
                     else
