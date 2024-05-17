@@ -39,10 +39,9 @@ namespace ChmodConverter
 
         private void TextBoxNumericPerm_TextChanged(object sender, TextChangedEventArgs e)
         {
-
             try
             {
-                if(TextBoxSymbolicPerm.IsLoaded && TextBoxNumericPerm.IsLoaded)
+                if(!(ReferenceEquals(TextBoxSymbolicPerm, null)) && !(ReferenceEquals(TextBoxNumericPerm, null)))
                     TextBoxSymbolicPerm.Text = Utils.NumericToSymbolic(TextBoxNumericPerm.Text);
             }
             catch (Exception ex)
