@@ -15,31 +15,31 @@
         <Label Content="Read" HorizontalAlignment="Left" Margin="28,79,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Write" HorizontalAlignment="Left" Margin="28,129,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Execute" HorizontalAlignment="Left" Margin="28,179,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxReadOwner"
 
-    FontSize="50" VerticalAlignment="Top" Margin="218,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+    FontSize="50" VerticalAlignment="Top" Margin="218,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsChecked="False"/>
+        <CheckBox x:Name="CheckBoxReadGuest"
 
             FontSize="50" VerticalAlignment="Top" Margin="268,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxReadOther"
 
             FontSize="50" VerticalAlignment="Top" Margin="318,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxWriteOwner"
 
             FontSize="50" VerticalAlignment="Top" Margin="218,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxWriteGuest"
 
             FontSize="50" VerticalAlignment="Top" Margin="268,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxWriteOther"
 
             FontSize="50" VerticalAlignment="Top" Margin="318,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxExecuteOwner"
 
             FontSize="50" VerticalAlignment="Top" Margin="218,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxExecuteGuest"
 
             FontSize="50" VerticalAlignment="Top" Margin="268,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <CheckBox
+        <CheckBox x:Name="CheckBoxExecuteOther"
 
             FontSize="50" VerticalAlignment="Top" Margin="318,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="1" Margin="0,50,0,0" VerticalAlignment="Top" Width="800"/>
