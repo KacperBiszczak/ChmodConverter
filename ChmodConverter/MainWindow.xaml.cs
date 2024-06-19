@@ -25,9 +25,9 @@ namespace ChmodConverter
             InitializeComponent();
         }
 
-        private void ButtonConvert_Click(object sender, RoutedEventArgs e)
+        private void ConvertCheckBoxes(object sender, RoutedEventArgs e)
         {
-            int[] checkBoxPerms = new int[3];
+         int[] checkBoxPerms = new int[3];
 
             // Owner rwx 
             if (CheckBoxReadOwner.IsChecked == true)
@@ -80,11 +80,6 @@ namespace ChmodConverter
             {
                 Console.WriteLine(ex.Message);
             }
-        }
-    
-        private void CheckBoxesConvert(string[,] checkBoxPerms)
-        {
-
         }
     }
 }

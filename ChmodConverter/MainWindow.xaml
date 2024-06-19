@@ -10,40 +10,39 @@
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="46,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" FontSize="20" Height="32"><Run Language="pl-pl" Text="Permissions:"/></TextBlock>
         <TextBox x:Name="TextBoxNumericPerm" Margin="362,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" HorizontalAlignment="Left" Height="32" Text="000" TextChanged="TextBoxNumericPerm_TextChanged"/>
-        <TextBox x:Name="TextBoxSymbolicPerm" Margin="486,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" HorizontalAlignment="Left" Width="168" Text="----------"/>
+        <TextBox x:Name="TextBoxSymbolicPerm" Margin="486,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" HorizontalAlignment="Left" Width="168" Text="---------"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="0" Margin="0,39,0,0" VerticalAlignment="Top" Width="800"/>
         <Label Content="Read" HorizontalAlignment="Left" Margin="28,79,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Write" HorizontalAlignment="Left" Margin="28,129,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="Execute" HorizontalAlignment="Left" Margin="28,179,0,0" VerticalAlignment="Top" FontSize="20"/>
         <CheckBox x:Name="CheckBoxReadOwner"
 
-    FontSize="50" VerticalAlignment="Top" Margin="218,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsChecked="False"/>
+    FontSize="50" VerticalAlignment="Top" Margin="218,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsChecked="False" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxReadGuest"
 
-            FontSize="50" VerticalAlignment="Top" Margin="268,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="268,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxReadOther"
 
-            FontSize="50" VerticalAlignment="Top" Margin="318,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="318,88,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxWriteOwner"
 
-            FontSize="50" VerticalAlignment="Top" Margin="218,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="218,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxWriteGuest"
 
-            FontSize="50" VerticalAlignment="Top" Margin="268,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="268,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxWriteOther"
 
-            FontSize="50" VerticalAlignment="Top" Margin="318,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="318,138,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxExecuteOwner"
 
-            FontSize="50" VerticalAlignment="Top" Margin="218,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="218,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxExecuteGuest"
 
-            FontSize="50" VerticalAlignment="Top" Margin="268,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="268,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <CheckBox x:Name="CheckBoxExecuteOther"
 
-            FontSize="50" VerticalAlignment="Top" Margin="318,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            FontSize="50" VerticalAlignment="Top" Margin="318,188,0,0" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ConvertCheckBoxes"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="1" Margin="0,50,0,0" VerticalAlignment="Top" Width="800"/>
-        <Button x:Name="ButtonConvert" Content="Convert" HorizontalAlignment="Left" Margin="490,159,0,0" VerticalAlignment="Top" Height="48" Width="164" FontSize="20" Click="ButtonConvert_Click"/>
 
     </Grid>
 </Window>

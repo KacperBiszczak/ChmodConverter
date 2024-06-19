@@ -1,4 +1,6 @@
-﻿namespace ChmodConverter
+﻿using ChmodConverter;
+
+namespace ChmodConverterApp
 {
     public class Program
     {

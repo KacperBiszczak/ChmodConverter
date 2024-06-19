@@ -19,8 +19,8 @@ namespace ChmodConverter
 
             symbolic = symbolic.Trim().ToLower();
 
-            // Check format is like "-rwxrwxrwx" 
-            if (symbolic[0] != '-' || symbolic.Length != 10)
+            // Check format is have 9 letters length 
+            if (symbolic.Length != 9)
                 throw new ArgumentException("Invalid format.");
 
             string result = "";
@@ -88,7 +88,7 @@ namespace ChmodConverter
             if (numeric.Trim().Length == 3)
             {
                 numeric = numeric.Trim();
-                string result = "-";
+                string result = "";
 
                 foreach (char c in numeric)
                 {
